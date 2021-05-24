@@ -16,7 +16,7 @@ To abstract something means to hide away the details inside something. For examp
 
 It is essentially like the saying 'what you see is what you get' - you do not need to know what's going on behind the scenes
 
-##Inheritance 
+## Inheritance 
 
 ---
 
