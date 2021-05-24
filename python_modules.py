@@ -94,3 +94,17 @@
 
 import math
 print(math.pi)
+
+# lamda has a built in functionality
+# lambda is mutable
+
+def add(num1, num2):
+    return num1 + num2
+
+# arguments:expression
+addition = lambda num1, num2: num1 + num2 # calculating the expression
+
+print("Value returned by add() function")
+print(add(2,2))
+print("Value returned using Lambda function")
+print(addition(7,2))
