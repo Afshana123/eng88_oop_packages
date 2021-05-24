@@ -64,24 +64,33 @@
 # We have a package called os which is used to get information about your localhost/your machine such as name, path etc
 # if you want to import more than one package, you can put a comma like the way we have done below
 
-import os, sys
-
-# working_dir = os.getcwd()
-# print("This is your current working Dir " + working_dir)
+# import os, sys, datetime, math
 #
-# # prints current working directory
+# # working_dir = os.getcwd()
+# # print("This is your current working Dir " + working_dir)
+# #
+# # # prints current working directory
+# #
+# # system_path = sys.path
+# # print("This is the path " + str(system_path))
 #
-# system_path = sys.path
-# print("This is the path " + str(system_path))
+# # you don't want to this all the time, so we can create a function
+#
+# print(os.cpu_count())
+# print(datetime.datetime.today())
+#
+# # % ? provides remainder value
+# print(math.remainder(1,5))
 
-# you don't want to this all the time, so we can create a function
+# def current_system_path():
+#     print("This is your current path " )
+#     return sys.path
+# print(current_system_path())
+#
+# def current_system_directory():
+#     print("This is your current working directory ")
+#     return os.getcwd()
+# print(current_system_directory())
 
-def current_system_path():
-    print("This is your current path " )
-    return sys.path
-print(current_system_path())
-
-def current_system_directory():
-    print("This is your current working directory ")
-    return os.getcwd()
-print(current_system_directory())
+import math
+print(math.pi)
