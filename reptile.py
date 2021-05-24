@@ -17,11 +17,13 @@ class Reptile(Animal):
     def hunt(self):
         return "Keep hunting for food until you get it it"
 
-    def us_venom(self):
+    def use_venom(self):
         return "If I've got it I'm using it"
 
 reptile_object = Reptile()
 
-print("This function is from Reptile class: " +reptile_object.seek_heat())
-print("This function is inherited from Animal class: " + reptile_object.alive())
+print("This function is from Reptile class: " + reptile_object.seek_heat())
+print("This function is inherited from Animal class: " + reptile_object.cold_blooded()) # why does it not work for eat?
 # This the amazing benefits of using OOP and
+
+# what is the difference between a function and a method
