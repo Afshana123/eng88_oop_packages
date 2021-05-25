@@ -18,7 +18,10 @@ class Python(Snake):
     def shed_skin(self):
         return "Time to grow out of myself! "
 
+#These essentially mean the same thing, it's like saying name = "Afshana" and first_name = "Afshana", it's just the naming convention that has changed
 python_object = Python()
 dog_object = Python()
+
+
 #print(" This climb function is from python class " + python_object.climb())
 #print("This function is from snake class " + python_object.forked_tongue)
