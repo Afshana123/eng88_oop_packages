@@ -1,3 +1,6 @@
+# Prompt the user to take the numbers
+
+
 class Simple_calc:
 
     def add(self, value1, value2):

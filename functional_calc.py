@@ -17,11 +17,12 @@ class Function_calc(Simple_calc):
 fun_object = Function_calc()
 
 # print statements for all the functions available in parents class as well as this(child) class
-print(fun_object.is_number_divisible(20,5))
-print(fun_object.is_number_divisible(7,2))
-print(fun_object.area_of_triangle(5,2))
-print(fun_object.add(5,2))
-print(fun_object.subtract(10,3))
-print(fun_object.divide(15,3))
-print(fun_object.multiply(4,2))
+# print(fun_object.is_number_divisible(20,5))
+# print(fun_object.is_number_divisible(7,2))
+# print(fun_object.area_of_triangle(5,2))
+# print(fun_object.add(5,2))
+# print(fun_object.subtract(10,3))
+# print(fun_object.divide(15,3))
+# print(fun_object.multiply(4,2))
+
 

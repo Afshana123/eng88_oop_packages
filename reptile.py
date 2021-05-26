@@ -4,7 +4,7 @@ from animal import Animal # Question about random
 # in these brackets
 class Reptile(Animal):
 
-    def __init__(self): #What does init mean
+    def __init__(self): # initilaises the current class and all of the other functions within the class so that when you call the function, it is able to run it
         # we have a keyword called super which inherits everything from parent class at the time of initilaisation of this class
         super().__init__()
         self.cold_blooded = True
