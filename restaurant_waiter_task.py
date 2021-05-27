@@ -36,12 +36,10 @@ class Restaurant_order:
 
     def ask_order(self):
         ask_the_user = input("Thank you. Would you like to add another item? Y/N: ")
-        return print_menu.next_order()
+        return print_menu.next_order()\\\\\\\\\\\
 
     def summary_order(self):
-        Return print_menu.
-        for list_items in menu_list.items():
-            print(menu)
+
 
 
 print_menu = Restaurant_order()

@@ -20,7 +20,7 @@ It is essentially like the saying 'what you see is what you get' - you do not ne
 
 ---
 
-Inheritances lets one object aquire the properties and methods of another class 
+Inheritance lets one object acquire the properties and methods of another class 
 
 You can derive classes from a base class 
 
@@ -47,72 +47,72 @@ For example, in a bank where only the user can see their own information
 You do this by putting an underscore to make it private e.g:
 __dob = 01/01/1991
 
+It is available but not accessible unless you are authorised to do so.
+
+
 
 ## Polymorphism 
 
---- 
+---
+
+Polymorphism means many forms. 
+
 This is when you would like create more functionalities 
 You're not changing anything in the parent class, but inheriting more to put into parent class 
 
-Phrases for classes: Super Class, Base Class, Parent Class, Child Class
+Phrases for classes: 
+- Super class, base Class, parent class all mean the same thing. 
+- Child class is inheriting from the above.
 
+Once you have inherited everything from the previous class, you can override particular attributes or behaviours without affecting the superclass.
 
-- OOP Task 1
-```python
-
-# Created a simple calculator class first:
-
-class Simple_calc:
-
-    def add(self, value1, value2):
-        return value1 + value2
-
-    def subtract(self, value1, value2):
-        return value1 - value2
-
-    def divide(self, value1, value2):
-        return value1/value2
-
-    def multiply(self, value1, value2):
-        return value1 * value2
-
-# create an object for this class
-
-calc_object = Simple_calc()
-
-# call the function
-
-# print(calc_object.add(2,5))
-
-```
+## Animal Class Exercise 
 
 ```python
-# Created a functional calculator class and then created an object to call and print from both simple calculator class and functional calculator class:
+# We will be creating an animal class
+# The behaviours are all the methods
+# The attributes are variables
+# We will then be creating a reptile class which will inherit from the animal class
 
-from oop_calc_task import Simple_calc
+# Animal > Reptile > Snake > Python
+# Inheritance > Abstract > Encapsulate > Override
 
-class Function_calc(Simple_calc):
+# animal file to create Animal class
+# class name must start with a capital letter
 
-    def __init__(self):
-        super().__init__()
+# class Animal:
+#     pass
 
-    def is_number_divisible(self, value1, value2):
-        if value1 % value2 == 0:
-            return True
-        else:
-            return False
+# You can write the keyword pass if you don't want to create any functionalities at the time
 
-    def area_of_triangle(self, height, base):
-        return 1 / 2 * base * height * 2.54
+class Animal:
 
-fun_object = Function_calc()
+    # if you want to initialise the class
+    def __init__(self): # self refers to the current class
+        # You create your variables
+        # In a normal circumstance, you would create the variables as normal e.g alive = True but when you are dealing with classes, you need to add self.
+         self.alive = True
+         self.spine = True
+         self.eyes = True
+         self.lungs = True
 
-# print statements for all the functions available in parents class as well as this(child) class
-print(fun_object.is_number_divisible(20,5))
-print(fun_object.is_number_divisible(7,2))
-print(fun_object.area_of_triangle(5,2))
-print(fun_object.add(5,2))
-print(fun_object.subtract(10,3))
-print(fun_object.divide(15,3))
-print(fun_object.multiply(4,2))
+    def breathe(self):
+        return "Keep breathing to stay alive."
+
+    def eat(self):
+        return "nom nom nom nom"
+
+    def move(self):
+        return "Moving all around the world! "
+
+# Nothing will be printed until you call the functions
+# If you want to use these method functions within the class, we will need to create an object of our Animal class
+
+cat = Animal() # This is how we create an object of our Animal class called cat
+
+print(cat.breathe()) # breathing for cat is abstracted
+
+# Without creating an object (instantiating) the class, you won't be able to call the methods
 ```
+
+
