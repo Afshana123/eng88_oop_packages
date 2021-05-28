@@ -1,4 +1,4 @@
-# creating a reptile class to inherit everything Animal class
+# Creating a reptile class to inherit everything Animal class
 
 from animal import Animal
 # in these brackets, we need to pass the name of the class we would like to inherit from
@@ -22,11 +22,10 @@ class Reptile(Animal):
 
 reptile_object = Reptile()
 
-# print("This function is from the Reptile class: " + reptile_object.seek_heat())
-# print("This function is inherited from the Animal class: " + reptile_object.eat())
+print("This function is from the Reptile class: " + reptile_object.seek_heat())
+print("This function is inherited from the Animal class: " + reptile_object.eat())
 
 # This the amazing benefits of using OOP and inheritance
 
-# What is the difference between a function and a method?
-# A method is a function inside a class
+# What is the difference between a function and a method? A method is a function inside a class.
 

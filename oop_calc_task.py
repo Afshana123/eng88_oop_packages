@@ -1,6 +1,5 @@
 # Prompt the user to take the numbers
 
-
 class Simple_calc:
 
     def add(self, value1, value2):
@@ -21,4 +20,4 @@ calc_object = Simple_calc()
 
 # call the function
 
-# print(calc_object.add(2,5))
+print(calc_object.add(2,5))
